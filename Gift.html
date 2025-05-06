@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gift Box Customizer</title>
+      <link rel="stylesheet" href="Gift.css">
+    </head>
+    <body>
+
+      <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">JoyBox</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Gift.html">Gift Boxes</a>
+                <a href="Phone.html">Phone Cases</a>
+                <a href="#artists">Artists</a>
+            </div>
+            <div class="nav-icons">
+                <button class="icon-btn" id="wishlistBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </button>
+                <button class="icon-btn" id="cartBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="icon-btn" id="userBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+      <div class="container">
+        <h1>Create Your Perfect Gift Box</h1>
+        
+        <div class="steps">
+          <div class="step active">
+            <div class="step-number">1</div>
+            <span>Select Theme</span>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <span>Choose Items</span>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <span>Add Message</span>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <span>Review</span>
+          </div>
+        </div>
+
+        <div class="content">
+          <!-- Theme Selection -->
+          <div class="section theme-section active">
+            <h2>Choose a Theme for Your Gift Box</h2>
+            <p class="subtitle">The theme will influence the packaging and overall aesthetic of your gift.</p>
+            <div class="themes-grid">
+              <div class="theme-card" data-theme="forest">
+                <div class="theme-color forest">
+                  <img src="https://i.pinimg.com/736x/1d/a1/62/1da16204fa1195e034791186b2bfe362.jpg" alt="Forest Enchantment">
+                </div>
+                <h3>Forest Enchantment</h3>
+              </div>
+              <div class="theme-card" data-theme="cozy">
+                <div class="theme-color cozy">
+                  <img src="https://i.pinimg.com/736x/bc/7e/d9/bc7ed9dfe97bb8e5ac7b5f4d3628638b.jpg" alt="Cozy Cabin">
+                </div>
+                <h3>Cozy Cabin</h3>
+              </div>
+              <div class="theme-card" data-theme="rustic">
+                <div class="theme-color rustic">
+                  <img src="https://i.pinimg.com/736x/65/66/6d/65666dcb5b142af3aab2b61c67051ea2.jpg" alt="Rustic Charm">
+                </div>
+                <h3>Rustic Charm</h3>
+              </div>
+              <div class="theme-card" data-theme="woodland">
+                <div class="theme-color woodland">
+                  <img src="https://i.pinimg.com/736x/05/35/99/0535997c87152517a275440c67adc912.jpg" alt="Woodland Magic">
+                </div>
+                <h3>Woodland Magic</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Items Selection -->
+          <div class="section items-section">
+            <h2>Select Items for Your Gift Box</h2>
+            <p class="subtitle">Choose 3-6 items to create your perfect gift.</p>
+            <p class="subtitle1">You can add more items later — these are just a few handcrafted options to start with.</p>
+            <div class="items-grid">
+
+              <div class="item-card">
+                <img src="https://i.pinimg.com/736x/e1/9e/65/e19e6582f04a4a6f0c125b1d8cb305b3.jpg" alt="Paper Flower Bouquet">
+                <h3>Paper Flower Bouquet</h3>
+                <p class="price">₹99</p>
+                <button class="add-to-box">Add to Box</button>
+              </div>
+
+              <div class="item-card">
+                <img src="https://i.pinimg.com/736x/e0/9c/d7/e09cd7f97c731ac7d62872b8f1344d1b.jpg" alt="Message in Bottle">
+                <h3>Message Scroll in Bottle</h3>
+                <p class="price">₹139</p>
+                <button class="add-to-box">Add to Box</button>
+              </div>
+
+              <div class="item-card">
+                <img src="https://i.pinimg.com/736x/65/a0/ab/65a0ab09ca63a0060955d629259c0eba.jpg" alt="Custom Bookmark">
+                <h3>Bookmark</h3>
+                <p class="price">₹49</p>
+                <button class="add-to-box">Add to Box</button>
+            </div>
+            
+
+              <div class="item-card">
+                <img src="https://i.pinimg.com/736x/0e/28/10/0e28100f025b3037ada945ad56b12a27.jpg" alt="Handwritten Letter">
+                <h3>Personalized Letter</h3>
+                <p class="price">₹109</p>
+                <button class="add-to-box">Add to Box</button>
+              </div>
+
+              <div class="item-card">
+                <img src="https://i.pinimg.com/736x/1a/9e/46/1a9e462ae148732aee3d88b436f03868.jpg" alt="Polaroid Bouquet">
+                <h3>Polaroid Bouquet</h3>
+                <p class="price">₹289</p>
+                <button class="add-to-box">Add to Box</button>
+              </div>
+
+              <div class="item-card">
+                <img src="https://i.pinimg.com/736x/a4/45/e7/a445e7e73cd8219d7e701fd8b9070011.jpg" alt="Box">
+                <h3>Box</h3>
+                <p class="price">₹0</p>
+                <button class="add-to-box">Add to Box</button>
+              </div>
+
+            </div>
+
+            <div class="selected-items">
+              <h3>Selected Items</h3>
+              <div class="selected-items-list"></div>
+              <div class="total">
+                <span>Total:</span>
+                <span class="total-amount">₹0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Message Section -->
+          <div class="section message-section">
+            <h2>Add a Personal Message</h2>
+            <p class="subtitle">Include a heartfelt note to make your gift extra special.</p>
+            <textarea placeholder="Write your message here..." class="message-input"></textarea>
+          </div>
+
+          <!-- Review Section -->
+          <div class="section review-section">
+            <h2>Review Your Gift Box</h2>
+            <div class="review-content">
+              <div class="review-theme">
+                <h3>Selected Theme</h3>
+                <p class="selected-theme-name"></p>
+              </div>
+              <div class="review-items">
+                <h3>Selected Items</h3>
+                <div class="review-items-list"></div>
+              </div>
+              <div class="review-message">
+                <h3>Your Message</h3>
+                <p class="message-preview"></p>
+              </div>
+              <div class="review-total">
+                <h3>Total Amount</h3>
+                <p class="final-total"></p>
+              </div>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+          </div>
+        </div>
+
+        <div class="navigation">
+          <button class="back-btn" disabled>Back</button>
+          <button class="continue-btn">Continue</button>
+        </div>
+      </div>
+
+      <script src="Gift.js"></script>
+    </body>
+</html>
